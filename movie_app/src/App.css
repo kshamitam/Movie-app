@@ -1,0 +1,63 @@
+*{
+background:#252b2b;
+color: #ffffff;
+}
+
+.container-fluid .row{
+  flex-wrap: nowrap;
+  overflow: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0%;
+  margin: 0;
+  display: flex;
+  
+}
+.App{
+  display: flex;
+  overflow: auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay{
+  opacity: 1;
+
+}
+
+.overlay{
+  
+  background:rgba(0, 0, 0, 0.5);
+  height: 30%;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 295px;
+  width: max-content;
+  right: 256px;
+
+}
+
+.row>*{
+  flex-shrink: 5;
+  width: 47%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.mr-2{
+  position: relative;
+  top: 3%;
+}
