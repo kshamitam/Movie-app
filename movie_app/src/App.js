@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <div className="container-fluid">
-      <div className="row d-flex align-items-center mt-4 mb-4">
+      <div>
         <MovieListHeading heading="Movies" />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
@@ -61,10 +61,10 @@ const App = () => {
         <MovieList
           movies={movies}
           handlelistClick={addwatchList}
-          watchlist={WatchList}
+          ActionComponent={WatchList}
         />
       </div>
-      <div className="row d-flex align-items-center mt-4 mb-4">
+      <div>
         <MovieListHeading heading="Watch List" />
         {/* <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} /> */}
       </div>
@@ -72,7 +72,7 @@ const App = () => {
         <MovieList
           movies={watchlist}
           handlelistClick={removelist}
-          watchlist={RemoveList}
+          ActionComponent={RemoveList}
         />
       </div>
     </div>

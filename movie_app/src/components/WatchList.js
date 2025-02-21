@@ -13,7 +13,18 @@ const WatchList = () => {
           alignContent: "center",
         }}
       >
-        <p>ADD</p>
+        <p
+          style={{
+            position: "relative",
+            right: "50px",
+            background: "white",
+            color: "black",
+            fontFamily: "unset",
+            fontSize: "x-large",
+          }}
+        >
+          ADD
+        </p>
       </div>
     </>
   );

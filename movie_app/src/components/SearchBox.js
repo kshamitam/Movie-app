@@ -2,8 +2,11 @@ import React from "react";
 
 const SearchBox = (props) => {
   return (
-    <div className="col col-sm-4">
+    <div
+      style={{ position: "relative", right: "-1200px", background: "#d7ede2" }}
+    >
       <input
+        style={{ background: "beige", color: "black" }}
         className="input "
         value={props.value}
         onChange={(event) => props.setSearchValue(event.target.value)}

@@ -3,9 +3,18 @@ import React from "react";
 const RemoveList = () => {
   return (
     <>
-      <span>
-        <p>REMOVE</p>
-      </span>
+      <div
+        style={{
+          position: "relative",
+          fontSize: " x-large",
+          background: "white",
+          color: "black",
+          right: "360px",
+          top: "20px",
+        }}
+      >
+        REMOVE
+      </div>
     </>
   );
 };
